@@ -34,15 +34,12 @@
       </div>
       <br><br>
       <?php
-      $lengthOfPyramid = $_GET["length-of-pyramid"];
-      $widthOfPyramid = $_GET["width-of-pyramid"];
-      $heightOfPyramid = $_GET["height-of-pyramid"];
-      $volume = ($lengthOfPyramid * $widthOfPyramid * $heightOfPyramid) / 3; 
-      echo "If a pyramid has lenght  = " . $lengthOfPyramid . " mm and the width = " . $widthOfPyramid . " mm, <br>";
-      echo "If a pyramid  has a height = " . $heightOfPyramid . " mm, then:<br>";
+      $radiusOfSphere = $_GET["radius-of-sphere"];
+      $volume = (4/3) * pi() * pow($radiusOfSphere,3); 
+      echo "If sphere has radius = " . $radiusOfSphere;
       echo "<br />";
       echo "<br />";
-      echo "The Volume of the pyramid is: " .round($volume) . " mm³ .";
+      echo "The Volume of the pyramid is: " .round($volume);
       ?>
       <br /> <br>
       <div class="page-content-answer">

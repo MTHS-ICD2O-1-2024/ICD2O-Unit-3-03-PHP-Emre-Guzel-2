@@ -27,7 +27,12 @@ body {
 }
 
 .formula {
+color: black;
+  font-weight: 900;
+  font-style: bold;
+  font-display: initial;
   font-size: 2rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 

@@ -37,7 +37,7 @@
     <form action="answer.php" method="GET">
       <div class="mdl-textfield mdl-js-textfield" id="base-a">
         <p class="base-a"> r Radius</p>
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="length-of-pyramid">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="radius-of-sphere">
         <label class="mdl-textfield__label" for="length-of-pyramid"></label>
         <span class="mdl-textfield__error">Input is not a number!</span>
       </div>
@@ -53,7 +53,7 @@
 
   </div>
   <br>
-  <img class="Calculate" src="images/pyramid.png" alt="Formula of rectengle">
+  <img class="Calculate" src="images/volume-of-sphere.png" alt="Formula of rectengle">
 </body>
 
 </html>
