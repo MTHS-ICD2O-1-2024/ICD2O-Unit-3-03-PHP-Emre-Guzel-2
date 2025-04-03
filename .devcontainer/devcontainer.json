@@ -15,7 +15,8 @@
                 "hediet.vscode-drawio",
                 "oderwat.indent-rainbow",
                 "PKief.material-icon-theme",
-                "sohamkamani.code-eol"
+                "sohamkamani.code-eol",
+                "vsls-contrib.gitdoc"
             ],
             "settings": {
                 "editor.autoClosingQuotes": "always",

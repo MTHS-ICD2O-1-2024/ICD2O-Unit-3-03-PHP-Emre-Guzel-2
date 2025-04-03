@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Volume of a sphere" />
+  <meta name="description" content="Volume of right rectangular pyramid  " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,42 +18,41 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Volume of a sphere </title>
+  <title>Volume of Right Rectangular Pyramid </title>
 </head>
 
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Volume of a sphere</span>
+        <span class="mdl-layout-title">Volume of Right Rectangular Pyramid </span>
       </div>
     </header>
-    <h2 class="formula">Formula</h2>
-    <p> V=lwh/3 </p>
-    <h3 class="dimatoins"> Please enter the dimatoins</h3>
-    <br>
-    <form action="answer.php" method="GET">
-      <div class="mdl-textfield mdl-js-textfield" id="base-a">
-        <p class="base-a"> r Radius</p>
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="length-of-pyramid">
-        <label class="mdl-textfield__label" for="length-of-pyramid"></label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+      </div>
+      <br><br>
+      <?php
+      $lengthOfPyramid = $_GET["length-of-pyramid"];
+      $widthOfPyramid = $_GET["width-of-pyramid"];
+      $heightOfPyramid = $_GET["height-of-pyramid"];
+      $volume = ($lengthOfPyramid * $widthOfPyramid * $heightOfPyramid) / 3; 
+      echo "If a pyramid has lenght  = " . $lengthOfPyramid . " mm and the width = " . $widthOfPyramid . " mm, <br>";
+      echo "If a pyramid  has a height = " . $heightOfPyramid . " mm, then:<br>";
+      echo "<br />";
+      echo "<br />";
+      echo "The Volume of the pyramid is: " .round($volume) . " mm³ .";
+      ?>
+      <br /> <br>
+      <div class="page-content-answer">
+        <a href="./index.php">Return ...</a>
       </div>
       <br>
-      <main id="click-me " class="mdl-layout__content">
-        <button id="click" type="submit" onclick="calculatoinOfAreaOfTrapizoid()"
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-          Enter
-        </button>
-      </main>
-    </form>
-    <p id="area">Volume is: </p>
-
-  </div>
-  <br>
-  <img class="Calculate" src="images/pyramid.png" alt="Formula of rectengle">
+      <div class="Calculate-2">
+        <img src="./images/pyramid.png" alt="Calculation">
+      </div>
+    </main>
 </body>
 
 </html>
