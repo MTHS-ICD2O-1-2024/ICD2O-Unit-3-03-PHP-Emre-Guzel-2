@@ -35,11 +35,11 @@
       <br><br>
       <?php
       $radiusOfSphere = $_GET["radius-of-sphere"];
-      $volume = (4/3) * pi() * pow($radiusOfSphere,3); 
+      $volume = (4 / 3) * pi() * pow($radiusOfSphere, 3);
       echo "If sphere has radius = " . $radiusOfSphere;
       echo "<br />";
       echo "<br />";
-      echo "The Volume of the pyramid is: " .round($volume);
+      echo "The Volume of the pyramid is: " . round($volume);
       ?>
       <br /> <br>
       <div class="page-content-answer">
@@ -47,7 +47,7 @@
       </div>
       <br>
       <div class="Calculate-2">
-        <img src="./images/pyramid.png" alt="Calculation">
+        <img src="./images/volume-of-sphere.png" alt="sphere">
       </div>
     </main>
 </body>

@@ -53,7 +53,7 @@
 
   </div>
   <br>
-  <img class="Calculate" src="images/volume-of-sphere.png" alt="Formula of rectengle">
+  <img class="Calculate" src="images/volume-of-sphere.png" alt="Formula of sphere">
 </body>
 
 </html>
